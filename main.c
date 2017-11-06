@@ -43,8 +43,8 @@ int fun_numTest () {
 int fun_stringTest1 () {
 	char message[] = "Hello, World!!!";
 	char *buffer;
-	buffer = &messsage;
-	printf ("%c", *buffer);
+	buffer = message;
+	printf ("%c\n", *buffer);
 	return 0;
 }
 /**/
