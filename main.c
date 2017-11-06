@@ -5,13 +5,15 @@
 //extern int *c;
 
 //int *fun_stringTest ();
-int fun_numTest ();
+int fun_stringTest1 ();
+//int fun_numTest ();
 //int sum ();
 
 int main () {
 	//printf ("Sum = %d\n", *c);
 	//fun_stringTest ();
-	fun_numTest ();
+	//fun_numTest ();
+	fun_stringTest1 ();
 	//printf ("%c\n", fun_stringTest());
 	return EXIT_SUCCESS;
 }
@@ -26,14 +28,23 @@ int sum () {
 }
 */
 
-/**/
+/*
 int fun_numTest () {
 	int num = 31;
 	int *numPointer;
 	numPointer = &num;
-	//*numPointer = num;
 	printf ("%u\n", *numPointer);
 	//printf ("%c", *passBuffer);
+	return 0;
+}
+*/
+
+/**/
+int fun_stringTest1 () {
+	char message[] = "Hello, World!!!";
+	char *buffer;
+	buffer = &messsage;
+	printf ("%c", *buffer);
 	return 0;
 }
 /**/
